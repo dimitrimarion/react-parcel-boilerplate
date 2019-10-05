@@ -1,0 +1,15 @@
+{
+  "presets": ["@babel/preset-react", "@babel/preset-env"],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "@images": "./assets/images"
+        }
+      }
+    ]
+  ]
+}

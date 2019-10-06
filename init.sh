@@ -18,8 +18,8 @@ echo "Updating package.json..."
 npx json -I -f package.json -e \
 	'this.name = "'"$name"'"; this.version = "'"$version"'"; this.description = "'"$description"'"; this.author = "'"$author"'"; this.license = "'"$license"'"'
 
-# Add init.sh to .gitignore
-echo "init.sh" >> .gitignore
+# Add init.sh.bak to .gitignore
+echo "init.sh.bak" >> .gitignore
 
 # Update README
 cat > README.md << EOF
@@ -43,4 +43,7 @@ echo
 echo "'$ npm run dev' to start the server."
 echo
 echo "'$ npm run build' to bundle your application for production."
+
 echo
+
+mv init.sh init.sh.bak

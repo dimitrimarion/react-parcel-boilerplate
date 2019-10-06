@@ -21,6 +21,22 @@ npx json -I -f package.json -e \
 # Add init.sh to .gitignore
 echo "init.sh" >> .gitignore
 
+# Update README
+cat > README.md << EOF
+### Install dependencies
+
+\`$ npm install\`
+
+### Build the app and start the server: 
+
+\`$ npm run dev\`
+
+### Bundle the application for production:
+
+\`$ npm run build\`
+
+EOF
+
 echo
 echo "Project initialized, you're ready to code!"
 echo

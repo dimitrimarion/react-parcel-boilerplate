@@ -7,7 +7,7 @@ echo
 echo "Enter your project details: "
 echo
 read -p 'Project name: ' name
-read -p 'Version: ' version
+read -p 'Version (X.Y.Z format): ' version
 read -p 'Description: ' description
 read -p 'Author: ' author
 read -p 'License: ' license

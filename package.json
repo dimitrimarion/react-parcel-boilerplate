@@ -4,6 +4,7 @@
   "description": "Boilerplate for React.js app with parcel bundler",
   "main": "src/index.html",
   "scripts": {
+    "setup": "sh init.sh",
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html --detailed-report",
     "format": "prettier \"src/**/*.{js,html}\" --write",

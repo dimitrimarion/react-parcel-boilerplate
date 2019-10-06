@@ -8,3 +8,10 @@ You can click on "Use this template" to create another repository or clone the r
 
 `$ git clone https://github.com/dimitrimarion/react-parcel-boilerplate.git`
 
+Run the setup:
+
+`$ npm run setup`
+
+Start the development server:
+
+`$ npm run dev`

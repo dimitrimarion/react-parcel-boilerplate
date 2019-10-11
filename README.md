@@ -23,4 +23,22 @@ Bundle the application for production:
 
 ## Useful packages
 
-* [babel-plugin-module-resolver](https://github.com/tleunen/babel-plugin-module-resolver)
+* [babel-plugin-module-resolver](https://github.com/tleunen/babel-plugin-module-resolver): this plugin simplify the import path in your project.
+```
+// Use this:
+import dog from "@images/dog.jpg";
+// Instead of that:
+import dog from "../../../images/dog.jpg"
+```
+You just need to add an alias in `.babelrc`:
+```
+ [
+   "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "@images": "./assets/images"
+        }
+      }
+  ]
+```

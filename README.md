@@ -1,6 +1,7 @@
 # React.js Boilerplate
 
-Quick setup for React.js application. It uses parcel and all the package needed to write a React.js app(babel, eslint, prettier).
+Quick setup for React.js application. It uses Parcel and all the package needed to write a React.js app (babel, eslint, prettier).
+It's a simple starter kit than you can easily extend. Only "react" and "react-dom" are installed, you decide which router or state management library you want to use.
 
 ## Getting started
 
@@ -15,3 +16,6 @@ Run the setup:
 Start the development server:
 
 `$ npm run dev`
+
+## Packages
+

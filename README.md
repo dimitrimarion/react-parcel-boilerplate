@@ -24,7 +24,7 @@ Bundle the application for production:
 ## Useful packages
 
 * [babel-plugin-module-resolver](https://github.com/tleunen/babel-plugin-module-resolver): this plugin simplify the import path in your project.
-```
+```javascript
 // Use this:
 import dog from "@images/dog.jpg";
 // Instead of that:
@@ -41,4 +41,37 @@ You just need to add an alias in `.babelrc`:
         }
       }
   ]
+```
+
+* [@babel/plugin-proposal-class-properties](https://babeljs.io/docs/en/next/babel-plugin-proposal-class-properties.html): this plugin let you use class properties.
+
+Without class properties:
+```javascript
+class Button extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { clicked: false };
+    this.handleClick = this.handleClick.bind(this);
+  }
+  
+  handleClick() {
+    this.setState({ clicked: true });
+  }
+  
+  render() {
+    return <button onClick={this.handleClick}>Click Me!</button>;
+  }
+}
+```
+With class properties and arrow function, there is no need to bind `this` and the code is shorter:
+```javascript
+class Button extends Component {
+  state = { clicked: false };
+  
+  handleClick = () => this.setState({ clicked: true });
+  
+  render() {
+    return <button onClick={this.handleClick}>Click Me!</button>;
+  }
+}
 ```

@@ -17,5 +17,10 @@ Start the development server:
 
 `$ npm run dev`
 
-## Packages
+Bundle the application for production:
 
+`$ npm run build`
+
+## Useful packages
+
+* [babel-plugin-module-resolver](https://github.com/tleunen/babel-plugin-module-resolver)

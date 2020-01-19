@@ -1,7 +1,7 @@
 #!/bin/bash
 
-echo "Installing and updating dependencies..."
-npm install && npm update
+echo "Installing dependencies..."
+npm install
 
 echo
 echo "Enter your project details: "
